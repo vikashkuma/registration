@@ -1,0 +1,14 @@
+
+.sign-in-main { 
+  :global {
+    .sign-in-wrap {
+      width: 100%;
+      max-width: 24rem;
+      margin: auto;
+      .card {
+        background: #333;
+        color: #52BBFD;
+      }
+    }
+  }
+}

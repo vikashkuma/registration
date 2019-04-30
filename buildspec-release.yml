@@ -1,0 +1,32 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - . /root/.bashrc
+      - npm install
+
+  pre_build:
+    commands:
+      - npm run lint
+      - npm run flow:check
+      - npm test
+
+      - echo Adding version $CODEBUILD_RESOLVED_SOURCE_VERSION
+      - sed -i -e 's#\$VERSION_NUMBER#'$CODEBUILD_RESOLVED_SOURCE_VERSION'#g' src/index.html
+
+      - echo Adding release version $(node -p "require('./package.json').version")
+      - sed -i -e 's#\$RELEASE_VERSION_NUMBER#'$(node -p "require('./package.json').version")'#g' src/index.html
+  build:
+    commands:
+      - npm run build
+      - echo Build completed on `date`
+
+  post_build:
+    commands:
+      - bash ./deploy.sh
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: build

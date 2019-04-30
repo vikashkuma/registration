@@ -1,0 +1,114 @@
+.landing-hv-logo {
+  margin-top: 5% !important;
+}
+.sign-in-wrap.container,
+.forgot-pass-wrap.container,
+.hpd-reset-pwd-wrap.container {
+  width: 100%;
+  max-width: 24rem;
+}
+.changeemail-wrap.container-fluid {
+  width: 100%;
+  max-width: 33rem;
+  margin: inherit;
+}
+.sign-up-wrap.container {
+  max-width: 34rem;
+}
+.sign-up-wrap.container .card .asterisk::before {
+  content: '*';
+  color: #d72853;
+  padding-left: 4px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.pwd-contains {
+  position: absolute;
+  top: 0;
+  right: -614px;
+  padding: 15px;
+  width: 367px;
+  border-radius: 3px;
+  background-color: #b3b6c9;
+  z-index: 1;
+  h6 {
+    color: #3e426e;
+    font-size: 16px;
+  }
+  ul {
+    margin: 0;
+    font-size: 14px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 19px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 9px solid #b3b6c9;
+    border-bottom: 8px solid transparent;
+  }
+}
+.changepwd-wrap {
+  position: relative;
+  form {
+    .col-10 {
+      position: static;
+    }
+  }
+  .pwd-contains {
+    top: 0;
+    right: -385px;
+    &::before {
+      display: none;
+    }
+  }
+}
+.hpd-reset-pwd-wrap {
+  .pwd-contains {
+    top: 88px;
+    right: -23rem;
+  }
+}
+.sign-up-wrap.container .card form {
+  position: relative;
+}
+.sign-in-wrap .btn-success,
+.sign-up-wrap .btn-success,
+.forgot-pass-wrap .btn-success {
+  width: 8rem;
+}
+.forgot-pass-wrap .alert.alert-success {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.error {
+  color: #d72853;
+}
+.form-group.required+small {
+  position: relative;
+  top: -24px;
+}
+.control-label {
+  font-size: 16px;
+  font-weight: 500;
+}
+.sign-up-wrap .react-switch.active .react-switch-bg {
+  background: #ef4a5a !important;
+}
+
+.mfa-form {
+  .control-label {
+    display: none;
+  }
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+// mixin locally added from bootstrap to avoid compilation error.
+@import 'scss/mixin/breakpoints';
+@import '~bootstrap/scss/bootstrap.scss';
+@import 'scss/mixin/clearfix';
+@import '~react-redux-toastr/lib/css/react-redux-toastr.min.css';
+@import 'scss/breadcrumb';
+@import 'scss/custom-forms';
+@import 'scss/custom';
+@import 'scss/navbar';
+@import 'scss/redux-toastr';
+@import 'scss/tooltip';
+@import 'scss/form';
+@import 'scss/bootstrap-slider';
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700');
+// styles override start here
+// report page scroll spy
+
+
+.landing-bg {
+  background-color: #131421;
+}
+.momentum-logo {
+  background: url('/images/momentum-logo.png') no-repeat center;
+  width: 200px;
+  height: 40px;
+  display: block;
+  margin: auto;
+}

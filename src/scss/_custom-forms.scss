@@ -1,0 +1,8 @@
+
+.custom-control-label {
+  // Background-color and (when enabled) gradient
+  &::before {
+    border-color: #fff !important;
+    border: 2px solid;
+  }
+}

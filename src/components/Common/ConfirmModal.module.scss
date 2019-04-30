@@ -1,0 +1,38 @@
+.confirm {
+  font-size: 14px;
+  margin: 5px 0;
+  :global {
+    .content {
+      display: flex;
+      color: #d72853;
+      line-height: 18px;
+    }
+    .notice {
+      width: 18px;
+      height: 18px;
+    }
+    .text {
+      flex: 1;
+    }
+    .btns {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #fff;
+      .btn {
+        width: 100%;
+        text-align: center;
+        height: 28px;
+        line-height: 28px;
+        cursor: pointer;
+        border-radius: 3px;
+        border: solid 1px #d72853;
+        padding: 0;
+        font-size: 14px;
+      }
+      .btn-yes {
+        background-color: #2dca8b;
+        border: solid 1px #2dca8b;
+      }
+    }
+  }
+}

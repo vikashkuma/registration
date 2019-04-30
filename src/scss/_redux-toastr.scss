@@ -1,0 +1,66 @@
+.redux-toastr .toastr {
+  border-radius: 0;
+  margin: 0;
+  min-height: auto;
+}
+.redux-toastr .top-center,
+.redux-toastr .top-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 0;
+  padding: 0;
+}
+.redux-toastr .toastr.rrt-success > div {
+  background-color: #60bb71;
+}
+.redux-toastr .toastr.rrt-error > div,
+.redux-toastr .toastr.rrt-success > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.redux-toastr .toastr .rrt-left-container,
+.redux-toastr .toastr .rrt-middle-container {
+  width: auto;
+  height: auto;
+  position: static;
+  margin-left: 0;
+}
+.redux-toastr .toastr .rrt-left-container .rrt-holder {
+  width: 70px;
+  height: auto;
+  position: relative;
+  margin-top: -13px;
+  left: 0;
+  padding-right: 30px;
+}
+.redux-toastr .toastr.rrt-error .rrt-left-container .rrt-holder {
+  width: 40px;
+  height: auto;
+  position: relative;
+  margin-top: 0;
+  left: 0;
+  padding-right: 0;
+}
+
+.notification-close-btn {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 20px;
+  font-size: 14px;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent !important;
+    border-color: #fff !important;
+    box-shadow: none !important;
+  }
+}

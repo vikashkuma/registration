@@ -1,0 +1,11 @@
+.hpd-account-wrap {
+  position: relative;
+  padding-bottom: 10rem;
+}
+.organization-name {
+  background: #03051a;
+  padding: 5px 15px;
+  :global {
+    margin-bottom: 1rem;
+  }
+}

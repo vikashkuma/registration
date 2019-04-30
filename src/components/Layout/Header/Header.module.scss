@@ -1,0 +1,23 @@
+.wrap-header {
+  :global {
+    .navbar-nav .dropdown-toggle.nav-link {
+      margin-left: 14px;
+    }
+    .active-dropdown {
+      .dropdown-toggle {
+        color: #b8b3aa;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-top: 4px solid #b8b3aa;
+        margin-top: -9px;
+        padding-top: 9px;
+      }
+    }
+  }
+}
